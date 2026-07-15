@@ -12,7 +12,7 @@ page_header(
 )
 
 segment = pd.read_csv("reports/segment_summary.csv")
-sales = pd.read_csv("data/sales_data.csv")
+sales = pd.read_csv("data/train.csv")
 
 product_sales = (
     sales.groupby("Product Name")["Sales"]

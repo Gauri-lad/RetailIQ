@@ -20,7 +20,8 @@ xgb = pd.read_csv("reports/xgboost_predictions.csv")
 comparison = pd.read_csv("reports/model_comparison.csv")
 
 # Load original sales data
-sales_df = pd.read_csv("data/sales_data.csv")
+sales_df = pd.read_csv("data/train.csv")
+
 
 
 # Convert dates

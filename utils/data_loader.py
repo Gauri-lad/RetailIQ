@@ -3,7 +3,7 @@ import streamlit as st
 
 @st.cache_data
 def load_data():
-    df = pd.read_csv("data/sales_data.csv")
+    df = pd.read_csv("data/train.csv")
 
     df["Order Date"] = pd.to_datetime(
         df["Order Date"],
