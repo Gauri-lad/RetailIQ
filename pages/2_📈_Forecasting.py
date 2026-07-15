@@ -30,7 +30,7 @@ sales_df["Order Date"] = pd.to_datetime(sales_df["Order Date"])
 # Create monthly actual sales
 monthly_sales = (
     sales_df
-    .groupby(pd.Grouper(key="Order Date", freq="M"))["Sales"]
+    .groupby(pd.Grouper(key="Order Date", freq="ME"))["Sales"]
     .sum()
     .reset_index()
 )
